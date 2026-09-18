@@ -32,7 +32,7 @@ targets:
     mode: production
     workspace:
       host: https://adb-7405613122488761.1.azuredatabricks.net
-      root_path: /Workspace/Users/ahyalciner.us@gmail.com/.bundle/${bundle.name}/${bundle.target}
+      root_path: /Shared/.bundle/${bundle.name}/${bundle.target}
     presets:
       tags:
         project: valuation
@@ -42,5 +42,7 @@ targets:
       catalog: valuation
       schema: prod
     permissions:
+      - service_principal_name: 155e681b-e669-4fa4-a3ee-743a50b3a06c
+        level: CAN_MANAGE
       - user_name: ahyalciner.us@gmail.com
         level: CAN_MANAGE
